@@ -1,0 +1,30 @@
+@value PopperArrow from '../Popper/Popper.module.css';
+
+.Tooltip {
+  display: inline-block;
+  background-color: var(--dark-grey);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-6xs) var(--spacing-2xs);
+  max-width: 150px;
+  border: none;
+}
+
+.Tooltip .PopperArrow:before {
+  background-color: var(--dark-grey);
+}
+
+.Tooltip[data-popper-placement='bottom'] .PopperArrow {
+  top: -4px;
+}
+
+.Tooltip[data-popper-placement='top'] .PopperArrow {
+  bottom: -4px;
+}
+
+.Tooltip[data-popper-placement='left'] .PopperArrow {
+  right: -4px;
+}
+
+.Tooltip[data-popper-placement='right'] .PopperArrow {
+  left: -4px;
+}

@@ -1,0 +1,9 @@
+.MenuItem {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+}
+
+.MenuItem:focus {
+  outline: none;
+}

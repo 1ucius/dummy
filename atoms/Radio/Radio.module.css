@@ -1,0 +1,48 @@
+@value Typo from '../Typo/Typo.module.css';
+
+.Radio {
+  max-width: 130px;
+  padding: var(--spacing-4xs) var(--spacing-4xs)
+    calc(var(--spacing-4xs) + var(--spacing-3xs)) var(--spacing-4xs);
+  position: relative;
+}
+
+.Radio:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue);
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transition: var(--default-transition);
+  transform: translate(-50%, 0);
+  opacity: 0;
+}
+
+.Radio .Typo {
+  transition: var(--default-transition);
+}
+
+.Radio:hover .Typo {
+  color: var(--soft-black);
+}
+
+.RadioChecked .Typo {
+  color: var(--soft-black);
+}
+
+.RadioChecked:after {
+  opacity: 1;
+}
+
+.Radio:not(.RadioChecked):hover:after {
+  opacity: 0.4;
+}
+
+.RadioDisabled {
+  background-color: #f7f9fa;
+  cursor: not-allowed;
+}

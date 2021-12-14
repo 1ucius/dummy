@@ -1,0 +1,101 @@
+@value Icon from '../../atoms/Icon/Icon.module.css';
+@value Typo from '../../atoms/Typo/Typo.module.css';
+
+.MenuItem {
+  position: relative;
+  z-index: 2;
+  font-size: var(--typo-caption);
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  max-width: 100%;
+  transition: var(--default-transition);
+}
+
+.MenuItem:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transition: var(--default-transition);
+}
+
+.MenuItem:hover::before {
+  background-color: var(--light-blue);
+}
+
+.activeNavLink .MenuItem:before {
+  background-color: var(--light-blue);
+}
+
+.MenuItem:after {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--blue);
+  width: 4px;
+  opacity: 0;
+  transition: var(--default-transition);
+}
+
+.activeNavLink {
+  position: relative;
+}
+
+.activeNavLink .MenuItem::after {
+  opacity: 1;
+}
+
+.MenuItemText {
+  color: var(--soft-black);
+  transition: var(--default-transition);
+}
+
+.MenuItem:hover .MenuItemText,
+.activeNavLink .MenuItemText {
+  color: var(--blue);
+}
+
+.MenuItem:hover .Icon,
+.activeNavLink .Icon {
+  fill: var(--blue);
+  stroke: var(--blue);
+}
+
+.Collapse {
+  transition: var(--default-transition);
+}
+
+.CollapseContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.MenuItemArrow {
+  position: absolute;
+  top: 50%;
+  right: var(--spacing-xs);
+  transform: translate(0, -50%) rotate(-90deg);
+  transition: var(--default-transition);
+}
+
+.expanded .MenuItemArrow {
+  transform: translate(0, -50%) rotate(0deg);
+}
+
+.MenuItemIcon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  transform: translateY(-50%);
+  transition: var(--default-transition);
+}
+
+/* IN PROGRESS */

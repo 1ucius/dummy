@@ -1,0 +1,302 @@
+@value Typo from '../Typo/Typo.module.css';
+@value Icon from '../Icon/Icon.module.css';
+
+.Button {
+  display: inline-block;
+  cursor: pointer;
+  transition: var(--default-transition);
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--transparent);
+  min-width: var(--button-min-width);
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.Button.Fluid {
+  display: block;
+  width: 100%;
+}
+
+.Button.NoMinWidth {
+  min-width: 0;
+}
+
+.Button:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.IconWrapper {
+  display: inline-block;
+}
+
+.Button:disabled:hover {
+  box-shadow: none;
+}
+
+.Small {
+  min-width: var(--button-small-min-width);
+}
+
+.AdditionalHoverZone .HoverZone {
+  content: '';
+  width: calc(100% + var(--spacing-3xs));
+  height: calc(100% + var(--spacing-3xs));
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* INVISIBLE PRESET */
+
+.PresetInvisible {
+  composes: Button;
+  min-width: 0;
+}
+
+.PresetInvisible.WithIcon .Typo {
+  padding-left: var(--spacing-4xs);
+}
+
+.PresetInvisible.RedIrreversibleAction .Icon {
+  fill: var(--red);
+  stroke: var(--red);
+}
+
+/* PRIMARY PRESET */
+
+.PresetPrimary {
+  padding: calc(var(--spacing-3xs) + var(--spacing-addition)) var(--spacing-xs);
+  background-color: var(--blue);
+  color: var(--white);
+  border: var(--default-border);
+  border-color: var(--blue);
+  border-radius: var(--border-radius-large);
+}
+
+.PresetPrimary.Small {
+  background-color: var(--blue);
+  color: var(--white);
+  border: var(--default-border);
+  border-color: var(--blue);
+  padding: calc(var(--spacing-6xs) + var(--spacing-addition)) var(--spacing-xs);
+  border-radius: var(--border-radius-medium);
+}
+
+.PresetPrimary:hover,
+.PresetPrimary.Small:hover {
+  box-shadow: var(--button-primary-hover-shadow);
+}
+
+.PresetPrimary:disabled,
+.PresetPrimary.Small:disabled {
+  background-color: var(--neutral-grey);
+  border-color: var(--neutral-grey);
+}
+
+.PresetPrimary.WithIcon .Typo,
+.PresetPrimary.Small.WithIcon .Typo {
+  padding-left: var(--spacing-4xs);
+}
+
+.Button.PresetPrimary.WithIcon .Icon,
+.Button.PresetPrimary.Small.WithIcon .Icon {
+  fill: var(--white);
+  stroke: var(--white);
+}
+
+.Button.PresetPrimary.RedIrreversibleAction:disabled {
+  background-color: var(--neutral-grey);
+  border-color: var(--neutral-grey);
+}
+
+/* SECONDARY PRESET */
+
+.PresetSecondary {
+  padding: calc(var(--spacing-3xs) + var(--spacing-addition)) var(--spacing-xs);
+  background-color: var(--white);
+  border: var(--default-border);
+  border-color: var(--neutral-grey);
+  border-radius: var(--border-radius-large);
+}
+
+.PresetSecondary.Small {
+  background-color: var(--white);
+  border: var(--default-border);
+  border-color: var(--neutral-grey);
+  padding: calc(var(--spacing-6xs) + var(--spacing-addition)) var(--spacing-xs);
+  border-radius: var(--border-radius-large);
+}
+
+.PresetSecondary:hover,
+.PresetSecondary.Small:hover {
+  box-shadow: var(--button-secondary-hover-shadow);
+}
+
+.PresetSecondary.WithIcon .Typo,
+.PresetSecondary.Small.WithIcon .Typo {
+  padding-left: var(--spacing-4xs);
+}
+
+.PresetSecondary.RedIrreversibleAction .Icon {
+  fill: var(--white);
+  stroke: var(--white);
+}
+
+/* ACTION PRESET */
+
+.PresetAction {
+  min-width: var(--button-small-min-width);
+  background-color: var(--white);
+  padding: calc(var(--spacing-6xs) + var(--spacing-addition)) var(--spacing-xs);
+  border: var(--default-border);
+  border-color: var(--neutral-grey);
+  border-radius: var(--border-radius-medium);
+}
+
+.PresetAction:hover {
+  box-shadow: var(--button-secondary-hover-shadow);
+}
+
+.PresetAction.WithIcon .Typo {
+  padding-left: var(--spacing-4xs);
+}
+
+.PresetAction.RedIrreversibleAction .Icon {
+  fill: var(--white);
+  stroke: var(--white);
+}
+
+/* LINK PRESET */
+
+.PresetLink {
+  min-width: 0;
+}
+
+.PresetLink.Button.RedIrreversibleAction,
+.PresetLinkNeutral.Button.RedIrreversibleAction {
+  background-color: var(--transparent);
+}
+
+.PresetLink.Button.RedIrreversibleAction .Typo,
+.PresetLinkNeutral.Button.RedIrreversibleAction .Typo {
+  color: var(--red);
+}
+
+.PresetLink.Button.RedIrreversibleAction .Typo:after,
+.PresetLinkNeutral.Button.RedIrreversibleAction .Typo:after {
+  background-color: var(--red);
+}
+
+.PresetLink.Button.RedIrreversibleAction .Icon,
+.PresetLinkNeutral.Button.RedIrreversibleAction .Icon {
+  fill: var(--red);
+  stroke: var(--red);
+}
+
+.PresetLink.Button.RedIrreversibleAction .Typo,
+.PresetLinkNeutral.Button.RedIrreversibleAction .Typo {
+  color: var(--red);
+}
+
+.PresetLink.WithIcon .Typo {
+  padding-left: var(--spacing-4xs);
+}
+
+/* LINK NEUTRAL PRESET */
+
+.PresetLinkNeutral {
+  composes: PresetLink;
+}
+
+.PresetLinkNeutral.WithIcon .Typo {
+  padding-left: var(--spacing-4xs);
+}
+
+/* ICON PRESET */
+
+.PresetIcon {
+  min-width: 0;
+  composes: PresetInvisible NoMinWidth;
+  padding: var(--spacing-6xs);
+}
+
+.PresetIcon .IconWrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius-round);
+  background-color: var(--dark-grey);
+  width: var(--spacing-s);
+  height: var(--spacing-s);
+  transition: var(--default-transition);
+}
+
+.PresetIcon .Typo {
+  padding-left: var(--spacing-3xs);
+}
+
+.PresetIcon .IconWrapper .Icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.PresetIcon:hover .IconWrapper {
+  background-color: var(--blue);
+  box-shadow: var(--icon-button-hover-shadow);
+}
+
+.PresetIcon.Small .IconWrapper {
+  width: var(--spacing-xs);
+  height: var(--spacing-xs);
+}
+
+.PresetIcon.Button.RedIrreversibleAction .IconWrapper,
+.PresetIcon.Button.RedIrreversibleAction:hover .IconWrapper {
+  background-color: var(--red);
+}
+
+.PresetIcon.Button.RedIrreversibleAction:hover .IconWrapper {
+  box-shadow: var(--icon-button-hover-shadow-red);
+}
+
+.PresetIcon.RedIrreversibleAction .Icon {
+  fill: var(--white);
+  stroke: var(--white);
+}
+
+/* MODIFIERS */
+
+.Button.RedIrreversibleAction {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.Button.RedIrreversibleAction .Typo {
+  color: var(--white);
+}
+
+.Button.RedIrreversibleAction.PresetPrimary:hover {
+  box-shadow: var(--button-primary-hover-shadow-red);
+}
+.Button.RedIrreversibleAction.PresetSecondary:hover {
+  box-shadow: var(--button-secondary-hover-shadow-red);
+}
+
+.Button.RedIrreversibleAction.PresetInvisible {
+  background-color: var(--transparent);
+}
+
+.Button.RedIrreversibleAction.PresetInvisible .Typo {
+  color: var(--red);
+}

@@ -1,0 +1,219 @@
+:root {
+  /* ---------------------------- COLORS ---------------------------- */
+  /* !ABSENT FROM GENERIC COMPONENT COLOR MAPS! ?SHOULD WE ADD IT? */
+  /* THEME COLORS */
+  --white: #fff;
+  --black: #000;
+  --soft-black: #1b2733;
+  --default-color: var(--soft-black);
+  --dark-grey: #2f3b48;
+  --medium-gray: #788392;
+  --light-grey: #ecf0f1;
+  --neutral-grey: #dfe1e6;
+  --gull-grey: #9ba5b3;
+  --aqua-grey: #f7f9fa;
+  --aqua-haze-grey: #f8fafb;
+  --background-grey: #fafafa;
+  --red: #ff483d;
+  --secondary-red: #ffebea;
+  --error-red: #ff3b30;
+  --green: #62de78;
+  --secondary-green: #eaffed;
+  --success-green: #50c24e;
+  --blue: #1268fb;
+  --dark-blue: #091e42;
+  --secondary-blue: #1d7afd;
+  --light-blue: #e5f0ff;
+  --secondary-light-blue: #f7f9fa;
+  --yellow: #ffc700;
+  --secondary-yellow: #fff7d9;
+  --transparent: transparent;
+
+  --soft-black-alpha-10: #1b273326;
+
+  --dark-blue-alpha-15: #091e4238;
+  --dark-blue-alpha-20: #091e4251;
+  --dark-blue-alpha-25: #091e4264;
+  --dark-blue-alpha-31: #091e4279;
+  --dark-blue-alpha-65: #091e42a6;
+
+  --secondary-blue-alpha-20: #1d7afd51;
+
+  --secondary-blue-alpha-01: #1d7afd03;
+
+  --neutral-grey-alpha-65: #dfe1e6a6;
+
+  --medium-gray-20: #78839251;
+  --blue-20: #1268fb51;
+  --blue-65: #1268fba6;
+  --error-red-20: #ff3b3051;
+  --success-green-20: #50c24e51;
+  --red-alpha-20: #ff483d51;
+  --red-alpha-65: #ff483da6;
+
+  /* ---------------------------- ELEVATIONS ---------------------------- */
+
+  /* SHADOWS */
+  --level1-shadow: 0px 1px 1px var(--dark-blue-alpha-25),
+    0px 0px 1px var(--dark-blue-alpha-31);
+  --level2-shadow: 0px 3px 5px var(--dark-blue-alpha-20),
+    0px 0px 1px var(--dark-blue-alpha-31);
+  --level3-shadow: 0px 8px 12px var(--dark-blue-alpha-15),
+    0px 0px 1px var(--dark-blue-alpha-31);
+  --level4-shadow: 0px 10px 18px var(--dark-blue-alpha-15),
+    0px 0px 1px var(--dark-blue-alpha-31);
+  --level5-shadow: 0px 18px 28px var(--dark-blue-alpha-15),
+    0px 0px 1px var(--dark-blue-alpha-31);
+
+  --table-header-shadow: 0px 3px 5px var(--dark-blue-alpha-20);
+  --table-footer-shadow: 0px -3px 10px var(--dark-blue-alpha-20);
+
+  --button-primary-hover-shadow: 0px 4px 6px var(--secondary-blue-alpha-20);
+  --button-primary-hover-shadow-red: 0px 4px 6px var(--red-alpha-20);
+  --button-secondary-hover-shadow: 0px 0px 6px var(--neutral-grey-alpha-65);
+  --button-secondary-hover-shadow-red: 0px 0px 6px var(--red-alpha-65);
+  --icon-button-hover-shadow: 0px 0px 0px 3px var(--light-blue);
+  --icon-button-hover-shadow-red: 0px 0px 0px 3px var(--red-alpha-20);
+
+  --header-shadow: 0px 4px 10px var(--soft-black-alpha-10);
+
+  --input-hover-shadow: 0px 0px 0px 2px var(--medium-gray-20);
+  --input-focus-shadow: 0px 0px 0px 2px var(--blue-20);
+  --input-error-shadow: 0px 0px 0px 2px var(--error-red-20);
+  --input-success-shadow: 0px 0px 0px 2px var(--success-green-20);
+
+  --chip-focus-shadow: 0px 0px 0px 1px var(--medium-gray-20);
+
+  --select-popper-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08),
+    0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+  /* ---------------------------- TYPOGRAPHY ---------------------------- */
+
+  /*  FONTS */
+  --typo-font-inter: 'Inter', sans-serif;
+  --typo-font-source-sans-pro: 'Source Sans Pro', sans-serif;
+
+  /* FONT SIZES */
+  --typo-default-fs: 14px;
+  --typo-heading1-fs: 36px;
+  --typo-heading2-fs: 28px;
+  --typo-heading3-fs: 24px;
+  --typo-heading4-fs: 22px;
+  --typo-heading5-fs: 18px;
+  --typo-heading6-fs: 16px;
+  --typo-paragraph-fs: 14px;
+  --typo-caption-fs: 12px;
+  --typo-code-fs: 12px;
+
+  /* LINE HEIGHTS */
+  --typo-default-lh: 1.1;
+  --typo-heading1-lh: 44px;
+  --typo-heading2-lh: 34px;
+  --typo-heading3-lh: 30px;
+  --typo-heading4-lh: 28px;
+  --typo-heading5-lh: 24px;
+  --typo-heading6-lh: 22px;
+  --typo-paragraph-lh: 18px;
+  --typo-subtitle-lh: 16px;
+  --typo-code-lh: 14px;
+  --typo-input-lh: 20px;
+  --typo-caption-lh: 14px;
+
+  /* FONT WEIGHTS */
+  --typo-regular-fw: 400;
+  --typo-semi-bold-fw: 600;
+  --typo-bold-fw: 700;
+
+  /* LETTER SPACING */
+  --typo-default-ls: normal;
+  --typo-regular-ls: 0.25px;
+  --typo-medium-ls: 0.5px;
+
+  /* TEXT ALIGN */
+  --typo-align-default: left;
+  --typo-align-center: center;
+  --typo-align-right: right;
+  --typo-align-justify: justify;
+
+  /* ---------------------------- ELEMENTS SPACING ---------------------------- */
+  --spacing-addition: 1px;
+  --spacing-6xs: 4px;
+  --spacing-5xs: 6px;
+  --spacing-4xs: 8px;
+  --spacing-3xs: 10px;
+  --spacing-2xs: 12px;
+  --spacing-xs: 16px;
+  --spacing-s: 20px;
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 60px;
+  --spacing-4xl: 80px;
+  --spacing-5xl: 100px;
+  --spacing-6xl: 120px;
+
+  /* ---------------------------- SIZES ---------------------------- */
+  --header-height: 80px;
+  --sidebar-width: 230px;
+  --sidebar-collapsed-width: 32px;
+  --sidebar-horizontal-width: 100%;
+  --sidebar-horizontal-height: 230px;
+
+  --main-page-padding: 30px 287px 0 144px;
+
+  --button-min-width: 150px;
+  --button-small-min-width: 90px;
+
+  --chip-max-width: 153px;
+
+  /* ---------------------------- BORDERS ---------------------------- */
+  /* BORDER RADIUS */
+  --border-radius-extra-small: 2px;
+  --border-radius-tiny: 3px;
+  --border-radius-small: 4px;
+  --border-radius-medium: 6px;
+  --border-radius-large: 8px;
+  --border-radius-default: var(--border-radius-large);
+  --border-radius-round: 50%;
+
+  /* BORDER WIDTH */
+  --border-width-none: 0;
+  --border-width-default: 1px;
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 3px;
+
+  --default-border: var(--border-width-thin) solid var(--transparent);
+
+  /* ---------------------------- ANIMATION ---------------------------- */
+  --reactive-bezier: cubic-bezier(0.17, 0.67, 0.33, 1.04);
+  --default-bezier: ease;
+  --default-transition-duration: 0.3s;
+  --default-transition: all var(--default-transition-duration) ease;
+  --react-transition: opacity 0.3s ease-out;
+
+  /* ---------------------------- ???????? ---------------------------- */
+
+  /* --active-menu-item-background: rgba(18, 104, 251, 0.1);
+  --secondary: rgba(27, 39, 51, 0.8);
+  --input-color: #647282;
+  --popup-backdrop: rgba(27, 39, 51, 0.9);
+  --box-shadow-color: rgba(179, 173, 179, 1);
+  --btn-focus: rgba(218, 218, 218, 0.2);
+
+  --padding-big-default: 25px;
+  --padding-default: 20px;
+  --padding-medium-default: 15px;
+  --padding-small-default: 10px;
+  --padding-minimal-default: 5px;
+  --padding-popup: 25px;
+  --margin-default: 10px;
+  --margin-popup: 25px; */
+
+  /* --default-border: 1px solid transparent;
+  --input-border: 1px solid #979797; */
+
+  /* --surface-border-radius: 4px;
+  --surface-padding: calc(var(--padding-default) * 2); */
+}

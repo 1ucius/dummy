@@ -1,0 +1,73 @@
+@value FlexItem from './FlexItem.module.css';
+
+.FlexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+  gap: var(--gap);
+}
+
+.Fluid {
+  width: 100%;
+}
+
+.Inline {
+  display: inline-flex;
+  width: auto;
+}
+
+.Direction-row {
+  flex-direction: row;
+}
+
+.Direction-column {
+  flex-direction: column;
+}
+
+.JustifyContent-center {
+  justify-content: center;
+}
+
+.JustifyContent-start {
+  justify-content: flex-start;
+}
+
+.JustifyContent-end {
+  justify-content: flex-end;
+}
+
+.JustifyContent-space-between {
+  justify-content: space-between;
+}
+
+.JustifyContent-space-around {
+  justify-content: space-around;
+}
+
+.AlignItems-stretch {
+  align-items: stretch;
+}
+
+.AlignItems-end {
+  align-items: flex-end;
+}
+
+.AlignItems-center {
+  align-items: center;
+}
+
+.AlignItems-start {
+  align-items: flex-start;
+}
+
+.Wrap {
+  flex-wrap: wrap;
+}
+
+.XRay {
+  background-color: red;
+}
+
+.XRay .FlexItem {
+  background-color: aqua;
+}

@@ -1,0 +1,108 @@
+@value TypoInput from '../Typo/Typo.module.css';
+
+.Input {
+  composes: TypoInput;
+  padding-top: var(--spacing-3xs);
+  padding-bottom: var(--spacing-3xs);
+  padding-left: var(--spacing-2xs);
+  padding-right: var(--spacing-m);
+  border: var(--default-border);
+  border-color: var(--medium-gray);
+  color: var(--medium-gray);
+  outline: none;
+  transition: var(--default-transition);
+  box-shadow: none;
+  background-color: var(--white);
+}
+
+.InputWrapper {
+  display: inline-block;
+}
+
+.Fluid {
+  width: 100%;
+}
+
+.Fluid input {
+  width: 100%;
+}
+
+.Active,
+.Focused {
+  border-color: var(--blue);
+  box-shadow: var(--input-focus-shadow);
+  color: var(--soft-black);
+}
+
+.Disabled {
+  border-color: var(--medium-gray-20);
+  color: var(--medium-gray-20);
+}
+
+.Input:not(.Error):not(.Success):not(:disabled):not(:focus):not(.Focused):not(.Disabled):hover {
+  box-shadow: var(--input-hover-shadow);
+}
+
+.Input:not(:disabled):not(.Disabled):hover,
+.Input:not(:disabled):not(.Disabled):hover::placeholder {
+  color: var(--soft-black);
+}
+
+.Input:not(:disabled):not(.Disabled):focus,
+.Input:not(:disabled):not(.Disabled):active {
+  color: var(--soft-black);
+}
+
+.Input:not(.Error):not(.Success):not(:disabled):not(.Disabled):focus,
+.Input:not(.Error):not(.Success):not(:disabled):not(.Disabled):active {
+  border-color: var(--blue);
+  box-shadow: var(--input-focus-shadow);
+  color: var(--soft-black);
+}
+
+.Input:disabled,
+.Input.Disabled {
+  border-color: var(--medium-gray-20);
+  color: var(--medium-gray-20);
+}
+
+.Input:disabled:hover,
+.Input.Disabled:hover {
+  border-color: var(--medium-gray-20);
+  color: var(--medium-gray-20);
+  box-shadow: none;
+}
+
+.Input:disabled::placeholder,
+.Input:disabled:hover::placeholder {
+  color: var(--medium-gray-20);
+}
+
+.Error {
+  border-color: var(--error-red);
+  box-shadow: var(--input-error-shadow);
+}
+
+.Success {
+  border-color: var(--success-green);
+  box-shadow: var(--input-success-shadow);
+}
+
+.InputRounded {
+  border-radius: var(--border-radius-small);
+}
+
+.InputSizeNormal {
+  max-width: 100%;
+}
+
+.InputSizeSmall {
+  max-width: var(--spacing-5xl);
+}
+
+.InputInvisible {
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}

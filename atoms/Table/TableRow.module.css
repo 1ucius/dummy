@@ -1,0 +1,13 @@
+.Row {
+  transition: var(--default-transition);
+  display: flex;
+  align-items: stretch;
+}
+
+.Row:hover {
+  background-color: var(--aqua-haze-grey);
+}
+
+.RowClickable {
+  cursor: pointer;
+}

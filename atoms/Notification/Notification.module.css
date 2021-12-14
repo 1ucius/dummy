@@ -1,0 +1,38 @@
+.Root {
+  position: fixed;
+  z-index: 1003;
+  bottom: var(--spacing-5xl);
+  right: var(--spacing-4xl);
+  width: auto;
+  height: auto;
+  min-width: 320px;
+  max-width: 400px;
+  min-height: 0;
+  border-radius: var(--border-radius-tiny);
+  padding: var(--spacing-s) var(--spacing-xs);
+}
+
+.Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.CloseButton {
+  position: absolute;
+  top: var(--spacing-6xs);
+  right: 0;
+}
+
+.Content {
+  position: relative;
+  padding: 0 var(--spacing-m) 0 var(--spacing-xl);
+}
+
+.Actions {
+  margin-top: var(--spacing-3xs);
+}
+
+.Message {
+  margin-top: var(--spacing-6xs);
+}

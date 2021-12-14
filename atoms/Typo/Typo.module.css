@@ -1,0 +1,383 @@
+.Typo {
+  display: inline-block;
+  font-family: var(--typo-font-source-sans-pro);
+  color: var(--color);
+  max-width: 100%;
+}
+
+.Typo.Fluid {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.Typo.Hovered {
+  box-sizing: border-box;
+}
+
+.Typo.NoWrap {
+  white-space: nowrap;
+}
+
+/* TEXT TRANSFORMATIONS */
+
+.Typo.Uppercased {
+  text-transform: uppercase;
+}
+
+.Typo.Lowercased {
+  text-transform: lowercase;
+}
+
+.Typo.Capitals {
+  text-transform: capitalize;
+}
+
+/* TEXT DECORATIONS */
+
+.Typo.Underlined {
+  text-decoration: underline;
+}
+
+/* TEXT ALIGN */
+
+.Typo.LeftAlign {
+  text-align: var(--typo-align-default);
+}
+
+.Typo.DefaultAlign {
+  text-align: var(--typo-align-default);
+}
+
+.Typo.CenterAlign {
+  text-align: var(--typo-align-center);
+}
+
+.Typo.RightAlign {
+  text-align: var(--typo-align-right);
+}
+
+.Typo.JustifyAlign {
+  text-align: var(--typo-align-justify);
+}
+
+/* ELLIPSIS */
+
+.Typo.OverflowEllipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.Typo.LineClamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp);
+  overflow: hidden;
+}
+
+/* ACCESSABILITY */
+
+.Typo.NoUserSelect {
+  user-select: none;
+}
+
+/* FONTS */
+
+.Typo.FontInter {
+  font-family: var(--typo-font-inter);
+}
+
+.Typo.FontSource {
+  font-family: var(--typo-font-source-sans-pro);
+}
+
+/* LETTER SPACING */
+
+.Typo.LetterSpacingDefault {
+  letter-spacing: var(--typo-default-ls);
+}
+
+.Typo.LetterSpacingRegular {
+  letter-spacing: var(--typo-regular-ls);
+}
+
+.Typo.LetterSpacingMedium {
+  letter-spacing: var(--typo-medium-ls);
+}
+
+/* FONT WEIGHT */
+.Typo.FontWeightRegular {
+  font-weight: var(--typo-regular-fw);
+}
+
+.Typo.FontWeightSemiBold {
+  font-weight: var(--typo-semi-bold-fw);
+}
+
+.Typo.FontWeightBold {
+  font-weight: var(--typo-bold-fw);
+}
+
+/* FONT SIZE */
+
+.Typo.FontSizeDefault {
+  font-size: var(--typo-default-fs);
+}
+
+.Typo.FontSizeHeading1 {
+  font-size: var(--typo-heading1-fs);
+}
+
+.Typo.FontSizeHeading2 {
+  font-size: var(--typo-heading2-fs);
+}
+
+.Typo.FontSizeHeading3 {
+  font-size: var(--typo-heading3-fs);
+}
+
+.Typo.FontSizeHeading4 {
+  font-size: var(--typo-heading4-fs);
+}
+
+.Typo.FontSizeHeading5 {
+  font-size: var(--typo-heading5-fs);
+}
+
+.Typo.FontSizeHeading6 {
+  font-size: var(--typo-heading6-fs);
+}
+
+.Typo.FontSizeParagraph {
+  font-size: var(--typo-paragraph-fs);
+}
+
+.Typo.FontSizeCaption {
+  font-size: var(--typo-caption-fs);
+}
+
+.Typo.FontSizeCode {
+  font-size: var(--typo-code-fs);
+}
+
+/* LINE HEIGHT */
+
+.Typo.LineHeightDefault {
+  line-height: var(--typo-default-lh);
+}
+
+.Typo.LineHeightHeading1 {
+  line-height: var(--typo-heading1-lh);
+}
+
+.Typo.LineHeightHeading2 {
+  line-height: var(--typo-heading2-lh);
+}
+
+.Typo.LineHeightHeading3 {
+  line-height: var(--typo-heading3-lh);
+}
+
+.Typo.LineHeightHeading4 {
+  line-height: var(--typo-heading4-lh);
+}
+
+.Typo.LineHeightHeading5 {
+  line-height: var(--typo-heading5-lh);
+}
+
+.Typo.LineHeightHeading6 {
+  line-height: var(--typo-heading6-lh);
+}
+
+.Typo.LineHeightParagraph {
+  line-height: var(--typo-paragraph-lh);
+}
+
+.Typo.LineHeightCode {
+  line-height: var(--typo-code-lh);
+}
+
+.Typo.LineHeightInput {
+  line-height: var(--typo-input-lh);
+}
+
+.Typo.LineHeightCaption {
+  line-height: var(--typo-caption-lh);
+}
+
+/* PRESETS */
+
+.TypoHeading1 {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-heading1-fs);
+  line-height: var(--typo-heading1-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-regular-ls);
+}
+
+.TypoHeading2 {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-heading2-fs);
+  line-height: var(--typo-heading2-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-regular-ls);
+}
+
+.TypoHeading3 {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-heading3-fs);
+  line-height: var(--typo-heading3-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-regular-ls);
+}
+
+.TypoHeading4 {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-heading4-fs);
+  line-height: var(--typo-heading4-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-regular-ls);
+}
+
+.TypoHeading5 {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-heading5-fs);
+  line-height: var(--typo-heading5-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-regular-ls);
+}
+
+.TypoHeading6 {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-heading6-fs);
+  line-height: var(--typo-heading6-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-regular-ls);
+}
+
+.TypoParagraph {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-paragraph-fs);
+  line-height: var(--typo-paragraph-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-regular-ls);
+}
+
+.TypoInput {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-paragraph-fs);
+  line-height: var(--typo-input-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-default-ls);
+}
+
+.TypoCaption {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-caption-fs);
+  line-height: var(--typo-caption-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-medium-ls);
+}
+
+.TypoCode {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-code-fs);
+  line-height: var(--typo-code-lh);
+  font-weight: var(--typo-regular-fw);
+  letter-spacing: var(--typo-medium-ls);
+}
+
+.TypoButtonPrimary {
+  text-align: var(--typo-align-center);
+  font-size: var(--typo-heading6-fs);
+  line-height: var(--typo-input-lh);
+  font-weight: var(--typo-semi-bold-fw);
+  letter-spacing: var(--typo-medium-ls);
+  text-transform: capitalize;
+}
+
+.TypoButtonPrimarySmall {
+  text-align: var(--typo-align-center);
+  font-size: var(--typo-default-fs);
+  line-height: var(--typo-input-lh);
+  font-weight: var(--typo-semi-bold-fw);
+  letter-spacing: var(--typo-default-ls);
+  text-transform: capitalize;
+}
+
+.TypoButtonSecondary {
+  text-align: var(--typo-align-center);
+  font-size: var(--typo-heading6-fs);
+  line-height: var(--typo-input-lh);
+  font-weight: var(--typo-semi-bold-fw);
+  letter-spacing: var(--typo-medium-ls);
+  text-transform: capitalize;
+}
+
+.TypoButtonSecondarySmall {
+  text-align: var(--typo-align-center);
+  font-size: var(--typo-default-fs);
+  line-height: var(--typo-input-lh);
+  font-weight: var(--typo-semi-bold-fw);
+  letter-spacing: var(--typo-default-ls);
+  text-transform: capitalize;
+}
+
+.TypoButtonAction {
+  text-align: var(--typo-align-center);
+  font-size: var(--typo-caption-fs);
+  line-height: var(--typo-input-lh);
+  font-weight: var(--typo-semi-bold-fw);
+  letter-spacing: var(--typo-medium-ls);
+  text-transform: uppercase;
+}
+
+.TypoButtonLink {
+  position: relative;
+  text-align: var(--typo-align-center);
+  font-size: var(--typo-paragraph-fs);
+  line-height: var(--typo-input-lh);
+  font-weight: var(--typo-semi-bold-fw);
+  letter-spacing: var(--typo-medium-ls);
+  text-transform: capitalize;
+  composes: OverflowEllipsis;
+}
+
+.TypoButtonLink:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background-color: var(--transparent);
+  transition: var(--default-transition);
+  opacity: 0;
+}
+
+.TypoButtonLink.Hovered:after {
+  background-color: var(--color);
+  opacity: 1;
+}
+
+.TypoSubtitle {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-paragraph-fs);
+  line-height: var(--typo-paragraph-lh);
+  font-weight: var(--typo-semi-bold-fw);
+  letter-spacing: var(--typo-medium-ls);
+  text-transform: uppercase;
+}
+
+.TypoSidebarTitle {
+  text-align: var(--typo-align-default);
+  font-size: var(--typo-paragraph-fs);
+  line-height: var(--typo-paragraph-lh);
+  font-weight: var(--typo-semi-bold-fw);
+  letter-spacing: var(--typo-regular-ls);
+  text-transform: uppercase;
+}

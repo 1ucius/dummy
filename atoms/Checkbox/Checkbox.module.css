@@ -1,0 +1,89 @@
+.Checkbox {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: var(--default-border);
+  border-width: var(--border-width-default);
+  border-color: var(--neutral-grey);
+  border-radius: var(--border-radius-tiny);
+  text-align: center;
+  vertical-align: middle;
+  transition: var(--default-transition);
+  background-color: var(--aqua-grey);
+  max-width: 100%;
+}
+
+.Small {
+  width: 14px;
+  height: 14px;
+}
+
+.CheckboxInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.Checkbox > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.Checkbox:focus-within {
+  border-color: var(--blue);
+}
+
+.Checkbox.Checked {
+  border-color: var(--blue);
+  background-color: var(--blue);
+}
+
+.Checkbox.Checked > svg {
+  opacity: 1;
+}
+
+.Checkbox.Disabled {
+  border-color: var(--neutral-grey);
+  background-color: var(--neutral-grey);
+}
+
+.Checkbox.Error {
+  border-color: var(--red);
+}
+
+.Checkbox.Error:focus-within {
+  border-color: var(--blue);
+}
+
+/* .Disabled > svg {
+  fill: var(--medium-gray);
+  stroke: var(--medium-gray);
+} */
+
+/* .Checkbox_checked {
+  background-color: var(--blue);
+} */
+
+/* .Checkbox:active {
+  background-color: var(--light-blue);
+}
+
+.Checkbox:active:checked {
+  background-color: var(--light-blue);
+}
+
+.Checkbox:active > svg {
+} */

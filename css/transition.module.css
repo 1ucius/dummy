@@ -1,0 +1,86 @@
+.transitionGroup {
+  height: 100%;
+}
+
+.fadeEnter {
+  opacity: 0;
+  transition: var(--react-transition);
+  pointer-events: none;
+}
+
+.fadeActiveEnter {
+  opacity: 1;
+  transition: var(--react-transition);
+  pointer-events: all;
+}
+
+.fadeExit {
+  opacity: 1;
+  transition: var(--react-transition);
+  pointer-events: all;
+}
+
+.fadeActiveExit {
+  opacity: 0;
+  transition: var(--react-transition);
+  pointer-events: none;
+}
+
+.instantEnter {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.instantActiveEnter {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.instantExit {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.instantActiveExit {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.instantDoneEnter {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.Collapse--collapse {
+  transition: var(--default-transition);
+}
+
+.slideEnter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slideActiveEnter {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slideExit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slideActiveExit {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slideDoneEnter {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slideDoneExit {
+  opacity: 0;
+  transform: translateX(-100%);
+}

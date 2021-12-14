@@ -1,0 +1,59 @@
+@value Typo from '../Typo/Typo.module.css';
+
+.PaginationText {
+  margin-right: var(--spacing-xl);
+}
+
+.PaginationButton {
+  position: relative;
+  padding: var(--spacing-5xs) var(--spacing-4xs);
+}
+
+.PaginationButton::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: var(--spacing-5xs);
+  right: var(--spacing-5xs);
+  height: 1px;
+  background-color: var(--blue);
+  transition: var(--default-transition);
+  opacity: 0;
+}
+
+.PaginationButton .Typo {
+  transition: var(--default-transition);
+}
+
+.PaginationButton:hover .Typo {
+  color: var(--blue-65);
+}
+
+.PaginationButton.Active .Typo {
+  color: var(--blue);
+}
+
+.PaginationButton.Active::after {
+  opacity: 1;
+}
+
+.Dots {
+  pointer-events: none;
+}
+
+.ArrowButton {
+  margin: 0;
+  height: 100%;
+}
+
+.ArrowButton::after {
+  display: none;
+}
+
+.ArrowButtonBack {
+  padding-right: var(--spacing-3xs);
+}
+
+.ArrowButtonForward {
+  padding-left: var(--spacing-3xs);
+}

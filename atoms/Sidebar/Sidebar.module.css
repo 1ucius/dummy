@@ -1,0 +1,50 @@
+.Sidebar {
+  position: absolute;
+  bottom: 0;
+  top: var(--header-height);
+  z-index: 998;
+  padding: 0 0 var(--spacing-xl);
+  background: var(--white);
+  box-shadow: var(--level3-shadow);
+  max-width: var(--sidebar-width);
+}
+
+.left {
+  composes: Sidebar;
+  left: 0;
+}
+
+.right {
+  composes: Sidebar;
+  right: 0;
+}
+
+.Header {
+  width: 100%;
+}
+
+.Content {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  max-height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: var(--default-border);
+  border-color: var(--neutral-grey);
+}
+
+.ToggleSidebar {
+  position: absolute;
+  z-index: 999;
+  bottom: var(--spacing-5xs);
+  left: 0;
+  padding: var(--spacing-6xs) var(--spacing-4xs);
+  min-width: 0;
+}
+
+.ToggleSidebar svg {
+  width: var(--spacing-xs);
+}

@@ -1,0 +1,7 @@
+.Collapse {
+  transition: var(--default-transition);
+}
+
+.CollapseContent {
+  display: block;
+}

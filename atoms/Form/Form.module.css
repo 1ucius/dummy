@@ -1,0 +1,20 @@
+.Form {
+  position: relative;
+  width: 100%;
+}
+
+.Header {
+  position: relative;
+}
+
+.Content {
+  margin: 0 auto;
+}
+
+.Row:nth-child(n + 2) {
+  margin-top: var(--spacing-xs);
+}
+
+.Footer {
+  margin-top: var(--spacing-m);
+}

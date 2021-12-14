@@ -1,0 +1,36 @@
+.Chip {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-extra-small);
+  background-color: var(--neutral-grey);
+  max-width: var(--chip-max-width);
+  padding: var(--spacing-6xs) calc(var(--spacing-6xs) + var(--spacing-m))
+    var(--spacing-6xs) var(--spacing-2xs);
+  min-height: 0;
+  cursor: pointer;
+}
+
+.ChipTooltip {
+  max-width: 100%;
+}
+
+.Chip:focus {
+  box-shadow: var(--chip-focus-shadow);
+}
+
+.NoPaddingRight {
+  padding-right: 7px;
+}
+
+.ChipIcon {
+  display: inline;
+  position: absolute;
+  right: var(--spacing-2xs);
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: none;
+  outline: none;
+}

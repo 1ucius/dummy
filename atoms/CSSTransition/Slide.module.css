@@ -1,0 +1,75 @@
+@keyframes In {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes Out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.enterAnimation {
+  animation: In var(--default-transition-duration) var(--default-bezier);
+}
+
+.enterDoneStyles {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.exitAnimation {
+  animation: Out var(--default-transition-duration) var(--default-bezier);
+}
+
+.exitDoneStyles {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.enter {
+  composes: enterDoneStyles;
+}
+
+.enterActive {
+  composes: enterAnimation;
+}
+
+.enterDone {
+  composes: enterDoneStyles;
+}
+
+.appear {
+  composes: enterDoneStyles;
+}
+
+.appearActive {
+  composes: enterAnimation;
+}
+
+.appearDone {
+  composes: enterDoneStyles;
+}
+
+.exit {
+  composes: exitDoneStyles;
+}
+
+.exitActive {
+  composes: exitAnimation;
+}
+
+.exitDone {
+  composes: exitDoneStyles;
+}

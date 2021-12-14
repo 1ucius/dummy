@@ -1,0 +1,95 @@
+@value Input from '../Input/Input.module.css';
+
+.Select {
+  composes: Input;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+  padding-right: var(--spacing-l);
+}
+
+.Select:focus-within {
+  border-color: var(--blue);
+  box-shadow: var(--input-focus-shadow);
+  color: var(--soft-black);
+}
+
+.Search {
+  cursor: text;
+}
+
+.SelectRounded {
+  border-radius: var(--border-radius-medium);
+}
+
+.SelectMultiple {
+  padding-right: var(--spacing-l);
+}
+
+.SelectActive {
+  border-color: #1268fb;
+  box-shadow: var(--input-focus-shadow);
+}
+
+.SelectArrow {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  line-height: 1;
+}
+
+.SelectArrow svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  transition: var(--default-transition);
+  transform-origin: 0 0;
+}
+
+.SelectActive .SelectArrow svg {
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+
+.SelectSearch {
+  width: 100%;
+}
+
+.SelectSearch:focus {
+  outline: none;
+}
+
+.SelectSmall {
+  font-size: var(--typo-caption-fs);
+  line-height: 20px;
+  padding: var(--spacing-5xs) var(--spacing-m) var(--spacing-5xs)
+    var(--spacing-2xs);
+  min-height: 0;
+  padding-right: var(--spacing-l);
+}
+
+.SelectPopper {
+  box-shadow: var(--select-popper-shadow);
+}
+
+.Invisible {
+  display: inline-flex;
+  width: auto;
+}
+
+.Select.Invisible,
+.Select.Invisible:focus,
+.Select.Invisible:focus-within,
+.Select.Invisible:active,
+.Select.Invisible:hover {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

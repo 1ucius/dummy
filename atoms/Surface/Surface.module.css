@@ -1,0 +1,47 @@
+.Surface {
+  background-color: var(--white);
+  padding: var(--spacing-m) var(--spacing-s);
+  width: 90%;
+  height: 90%;
+  transition: var(--default-transition);
+}
+
+.Level0 {
+  box-shadow: none;
+}
+
+.Level1 {
+  box-shadow: var(--level1-shadow);
+}
+
+.Level2 {
+  box-shadow: var(--level2-shadow);
+}
+
+.Level3 {
+  box-shadow: var(--level3-shadow);
+}
+
+.Level4 {
+  box-shadow: var(--level4-shadow);
+}
+
+.Level5 {
+  box-shadow: var(--level5-shadow);
+}
+
+.Rounded {
+  border-radius: var(--border-radius-large);
+}
+
+.Surface:nth-of-type(n + 2) {
+  margin-top: var(--spacing-s);
+}
+
+.Surface.NoPadding {
+  padding: 0;
+}
+
+.Surface.SmallPadding {
+  padding: var(--spacing-3xs) var(--spacing-s);
+}

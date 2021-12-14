@@ -1,0 +1,29 @@
+.Footer {
+  padding: var(--spacing-2xs) var(--spacing-xs);
+  background-color: var(--white);
+  z-index: 2;
+  max-width: 100%;
+}
+
+.Sticky {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.PaginationText {
+  margin-right: var(--spacing-xl);
+}
+
+.RowsPerPageText {
+  margin-right: var(--spacing-2xs);
+}
+
+.PaginationButton {
+  padding: var(--spacing-6xs);
+}
+
+.PaginationButtonForward {
+  margin-left: var(--spacing-s);
+}

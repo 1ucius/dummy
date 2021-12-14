@@ -1,0 +1,27 @@
+.SearchField {
+  position: relative;
+}
+
+.InputWrapper {
+  position: relative;
+}
+
+.InputWrapper input {
+  padding-right: var(--spacing-l);
+  padding-left: var(--spacing-l);
+}
+
+.InputAdornment {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: var(--spacing-3xs);
+  pointer-events: none;
+}
+
+.ClearButton {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: var(--spacing-2xs);
+}

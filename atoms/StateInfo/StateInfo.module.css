@@ -1,0 +1,20 @@
+.root {
+  max-width: 212px;
+  padding: 16px;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  margin-bottom: 24px;
+}
+
+.icon {
+  background-color: var(--white);
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+}

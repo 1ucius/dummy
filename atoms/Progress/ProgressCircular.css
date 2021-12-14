@@ -1,0 +1,23 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ProgressCircular {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -18px;
+  margin-top: -18px;
+}
+
+.ProgressCircular_indicator {
+  width: 36px;
+  height: 36px;
+  animation: rotate 1s infinite linear;
+}

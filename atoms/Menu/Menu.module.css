@@ -1,0 +1,13 @@
+.Menu {
+  display: block;
+  width: 100%;
+  margin-top: var(--spacing-4xs);
+  margin-bottom: var(--spacing-4xs);
+  padding: 0;
+  list-style: none;
+}
+
+.NoMargin {
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -1,0 +1,25 @@
+.SelectOption {
+  position: relative;
+  padding: var(--spacing-4xs) var(--spacing-2xs);
+  background-color: var(--transparent);
+  transition: var(--default-transition);
+  cursor: pointer;
+}
+
+.SelectOption:hover,
+.SelectOptionActive,
+.SelectOption:focus {
+  background-color: var(--light-blue);
+}
+
+.WithCheckbox {
+  padding-left: calc(var(--spacing-m) + var(--spacing-2xs));
+}
+
+.WithCheckbox .SelectOptionCheck {
+  position: absolute;
+  top: 50%;
+  left: var(--spacing-2xs);
+  transform: translateY(-50%);
+  pointer-events: none;
+}

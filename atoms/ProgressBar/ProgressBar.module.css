@@ -1,0 +1,23 @@
+.Container {
+  width: 100%;
+}
+
+.Progress {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  height: var(--spacing-6xs);
+  appearance: none;
+}
+
+.Progress::-webkit-progress-bar {
+  background-color: var(--light-grey);
+}
+
+.Progress::-webkit-progress-value {
+  background-color: var(--blue);
+}
+
+.Title {
+  margin-left: var(--spacing-4xs);
+}

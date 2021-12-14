@@ -1,0 +1,24 @@
+.Cell {
+  padding: var(--spacing-s) var(--spacing-xs);
+  min-width: 180px;
+  max-width: 660px;
+  width: 100%;
+}
+
+.HeaderCell {
+  padding-top: var(--spacing-m);
+}
+
+.Index,
+.Actions {
+  composes: Cell;
+  min-width: var(--spacing-3xl);
+  max-width: var(--spacing-3xl);
+  width: auto;
+}
+
+.Actions {
+  min-width: var(--spacing-5xl);
+  max-width: var(--spacing-6xl);
+  flex-grow: 0;
+}

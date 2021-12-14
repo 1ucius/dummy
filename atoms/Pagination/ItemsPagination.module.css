@@ -1,0 +1,11 @@
+.PaginationText {
+  margin-right: var(--spacing-xl);
+}
+
+.PaginationButton {
+  padding: var(--spacing-5xs);
+}
+
+.PaginationButtonForward {
+  margin-left: var(--spacing-s);
+}

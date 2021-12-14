@@ -1,0 +1,55 @@
+.Icon {
+  display: block;
+  vertical-align: middle;
+  stroke-width: 0;
+  transition: var(--default-transition);
+  fill: var(--fill);
+  stroke: var(--stroke);
+  transform-origin: 50% 50%;
+  transform: rotate(var(--rotate));
+  height: var(--custom-size);
+}
+
+/* SIZE */
+
+.Logo {
+  height: 48px;
+}
+
+.Large {
+  height: 36px;
+}
+
+.Medium {
+  height: 24px;
+}
+
+.Normal {
+  height: 20px;
+}
+
+.Small {
+  height: 16px;
+}
+
+.ExtraSmall {
+  height: 12px;
+}
+
+.Tiny {
+  height: 8px;
+}
+
+.ExtraTiny {
+  height: 6px;
+}
+
+/* FILL MODIFIERS */
+
+.NoFill path {
+  fill: none !important;
+}
+
+.NoStroke path {
+  stroke: none !important;
+}

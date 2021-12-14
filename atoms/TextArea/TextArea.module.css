@@ -1,0 +1,72 @@
+@value Input, Disabled as InputDisabled, Focused as InputFocused, InputRounded, Success as SuccessStyles, Error as ErrorStyles from '../Input/Input.module.css';
+
+.TextAreaWrapper {
+  composes: Input;
+  display: inline-block;
+  overflow: hidden;
+  height: auto;
+  min-height: 101px;
+  max-height: 125px;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.ScrollArea {
+  overflow: hidden;
+}
+
+.TextArea {
+  composes: Input;
+  display: block;
+  resize: none;
+  min-height: 101px;
+  box-sizing: border-box;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  word-break: break-all;
+  padding-right: var(--spacing-2xs);
+}
+
+.TextArea[placeholder]:empty::before {
+  display: block;
+  content: attr(placeholder);
+  font-family: var(--typo-font-source-sans-pro);
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--medium-gray);
+  transition: var(--default-transition);
+}
+
+.TextArea[placeholder]:empty:hover::before {
+  color: var(--soft-black);
+}
+
+.Focused .TextArea[placeholder]:empty::before {
+  color: var(--medium-gray);
+}
+
+.Disabled .TextArea,
+.Disabled .TextArea[placeholder]:empty::before {
+  color: var(--medium-gray-20);
+}
+
+.Focused {
+  composes: InputFocused;
+}
+
+.Disabled {
+  composes: InputDisabled;
+}
+
+.Rounded {
+  composes: InputRounded;
+}
+
+.Error {
+  composes: ErrorStyles;
+}
+
+.Success {
+  composes: SuccessStyles;
+}

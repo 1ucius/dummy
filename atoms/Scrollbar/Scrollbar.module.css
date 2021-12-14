@@ -1,0 +1,115 @@
+.Scrollbar {
+  display: block;
+  height: 100%;
+  max-height: var(--maxHeight) !important;
+}
+
+.View {
+  display: block;
+}
+
+.Scrollbar.OnlyVertical > div.View {
+  /* width: 100%; */
+  /* width: var(--maxWidth) !important; */
+}
+
+.Scrollbar.OnlyHorizontal,
+.Scrollbar.OnlyHorizontal > div.View {
+  width: var(--maxWidth) !important;
+  height: max-content !important;
+  max-height: max-content !important;
+}
+
+.TrackHorizontalHidden {
+  display: none !important;
+}
+
+.TrackVerticalHidden {
+  display: none !important;
+}
+
+/* SIZES */
+
+.Small {
+  composes: Scrollbar;
+}
+
+.Medium {
+  composes: Scrollbar;
+}
+
+.Large {
+  composes: Scrollbar;
+}
+
+/* TRACKS */
+
+.Thumb {
+  background-color: var(--gull-grey);
+}
+
+.Track {
+  background-color: var(--aqua-grey);
+}
+
+.ThumbVertical,
+.ThumbHorizontal {
+  composes: Thumb;
+  border-radius: var(--border-radius-small);
+  /* transition-property: width, height;
+  transition-duration: var(--default-transition-duration); */
+}
+
+.TrackVertical,
+.TrackHorizontal {
+  composes: Track;
+  border-radius: var(--border-radius-small);
+  /* transition-property: width, height;
+  transition-duration: var(--default-transition-duration); */
+  z-index: 99;
+}
+
+.TrackVertical {
+  top: var(--spacing-4xs);
+  bottom: var(--spacing-4xs);
+  right: var(--spacing-6xs);
+}
+
+.TrackHorizontal {
+  left: var(--spacing-xs);
+  right: var(--spacing-xs);
+  bottom: var(--spacing-6xs);
+}
+
+.Small .Track.TrackVertical:hover,
+.Small .Track.TrackVertical:hover .Thumb.ThumbVertical {
+  width: 6px !important;
+}
+
+.Medium .Track.TrackVertical:hover,
+.Medium .Track.TrackVertical:hover .Thumb.ThumbVertical {
+  width: 8px !important;
+}
+
+.Large .Track.TrackVertical:hover {
+  width: 14px !important;
+}
+
+.Large .Track.TrackVertical:hover .Thumb.ThumbVertical {
+  width: 10px !important;
+}
+
+.Small .Track.TrackVertical,
+.Small .Track.TrackHorizontal,
+.Medium .Track.TrackVertical,
+.Medium .Track.TrackHorizontal {
+  background-color: var(--transparent);
+}
+
+.Medium .ThumbVertical {
+  width: 6px;
+}
+
+.Large .ThumbVertical {
+  left: 2px;
+}

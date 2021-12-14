@@ -1,0 +1,33 @@
+@value Surface from '../atoms/Surface/Surface.module.css';
+
+.Surface.StorybookPreview {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Tall {
+  composes: StorybookPreview;
+}
+
+.InProgress {
+  position: absolute;
+  z-index: 10;
+  left: var(--spacing-6xs);
+  top: var(--spacing-6xs);
+}
+
+:global .docs-story :local .StorybookPreview {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+}
+
+:global .docs-story :local .StorybookPreview.Tall {
+  width: auto;
+  height: auto;
+  max-height: max-content;
+}

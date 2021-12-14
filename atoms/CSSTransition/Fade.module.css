@@ -1,0 +1,69 @@
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.enterAnimation {
+  animation: FadeIn var(--default-transition-duration) var(--reactive-bezier);
+}
+
+.enterDoneStyles {
+  opacity: 1;
+}
+
+.exitAnimation {
+  animation: FadeOut var(--default-transition-duration) var(--reactive-bezier);
+}
+
+.exitDoneStyles {
+  opacity: 0;
+}
+
+.enter {
+  composes: enterDoneStyles;
+}
+
+.enterActive {
+  composes: enterAnimation;
+}
+
+.enterDone {
+  composes: enterDoneStyles;
+}
+
+.appear {
+  composes: enterDoneStyles;
+}
+
+.appearActive {
+  composes: enterAnimation;
+}
+
+.appearDone {
+  composes: enterDoneStyles;
+}
+
+.exit {
+  composes: exitDoneStyles;
+}
+
+.exitActive {
+  composes: exitAnimation;
+}
+
+.exitDone {
+  composes: exitDoneStyles;
+}
